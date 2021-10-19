@@ -13,14 +13,14 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand fw-bold">Navbar</a>
+        <a class="navbar-brand fw-bold">Cocktailpedia</a>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="home.html">Caută după nume</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#">Features</a>
+              <a class="nav-link active" href="#">Cauta după ingrediente</a>
             </li>
           </ul>
         </div>
@@ -55,17 +55,24 @@
     </div>
 
     <div class="mt-5 ms-3" id="cocktailuri">
-      <div class="mb-3">
+      <div class="mb-3" id="rezultate" hidden>
         <h1>Rezultate</h1>
       </div>
       <div class="d-flex flex-column text-center" id="container-cocktail">
-        <div class="d-flex flex-row align-items-center col-sm-4 mb-1 ms-3">
-          <p class="my-auto">ceva</p>
-          <button class="btn btn-outline-info my-auto btn-sm ms-auto text-center">Extend</button>
-        </div>
-        <div class="d-flex flex-row align-items-center col-sm-4 mb-1 ms-3">
-          <p class="my-auto">ceva</p>
-          <button class="btn btn-outline-info my-auto btn-sm ms-auto text-center">Extend</button>
+      </div>
+
+      <div class="card text-white bg-dark col-md-6 mt-3 mb-5" id="descriere" hidden>
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img id="descriere-imagine" src="https://www.thecocktaildb.com/images/media/drink/9179i01503565212.jpg" class="img-fluid rounded-start p-1" height="100%" width="100%" alt="Image of a cocktail"/>
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 id="descriere-titlu" class="card-title">titlu cocktail</h5>
+              <p id="descriere-descriere" class="card-text">descriere cocktail</p>
+              <p class="card-text"><small id="descriere-ingrediente" class="text-muted">Ingrediente</small></p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
