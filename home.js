@@ -10,9 +10,9 @@ function cautaCocktail() {
 }
 
 function submitQuerry(searchTopic, alcoholCheck) {
+    let searchQuerry = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=" + searchTopic;
     const xhttp = new XMLHttpRequest();
     xhttp.onload = function() { parseResponse(alcoholCheck, this); };
-    let searchQuerry = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=" + searchTopic;
     xhttp.open("GET", searchQuerry, true);
     xhttp.send();
 }
