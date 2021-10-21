@@ -35,7 +35,7 @@ function parseResponse(alcoholCheck, context) {
     }
 
     if(!addedElem) {
-        document.getElementById("container-cocktail").innerHTML = `"<h3 class="col-sm-4 mb-1 ms-3">Nu a fost gasit niciun rezultat</h3>"`;
+        document.getElementById("container-cocktail").innerHTML = `<h3 class="col-sm-4 mb-1 ms-3">Nu a fost gasit niciun rezultat</h3>`;
     }
 
     if(addedElem == 1) {
