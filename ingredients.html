@@ -28,27 +28,28 @@
     </nav>
 
     <div class="row mt-5">
-	    <div class="col-3"></div>
-	    <div class="col-6">
-        <div class="row">
-          <div class="col-6">
-            <h2 class="text-center">Ingrediente dorite</h2>
-            <div class="d-flex flex-row flex-wrap justify-content-around" id="butoane-dorite">
-              <input type="checkbox" class="btn-check mb-5 me-2" id="btn-check1" autocomplete="off">
-              <label class="btn btn-outline-info" for="btn-check1">Single</label>
+	    <div class="col-2"></div>
+	    <div class="col-8">
+        <form action="#" onsubmit="cautaCocktail();return false">
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary mb-2 align-self-center">Caută</button>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <h2 class="text-center">Ingrediente dorite</h2>
+              <div class="d-flex flex-row flex-wrap justify-content-around" id="butoane-dorite">
+              </div>
+            </div>
+            
+            <div class="col-6">
+              <h2 class="text-center">Ingrediente nedorite</h2>
+              <div class="d-flex flex-row flex-wrap justify-content-around" id="butoane-nedorite">
+              </div>
             </div>
           </div>
-          
-          <div class="col-6">
-            <h2 class="text-center">Ingrediente nedorite</h2>
-            <div class="d-flex flex-row flex-wrap justify-content-around" id="butoane-nedorite">
-              <input type="checkbox" class="btn-check mb-5 me-2" id="btn-check2" autocomplete="off">
-              <label class="btn btn-outline-danger" for="btn-check2">Single</label>
-            </div>
-          </div>
-        </div>
+        </form>
       </div>
-	    <div class="col-3"></div>
+	    <div class="col-2"></div>
     </div>
     
       
