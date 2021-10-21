@@ -7,8 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="ingredients.js"></script>
-    <script src="utils.js"></script>
+    <script src="src/ingredients.js"></script>
     <title>Cocktail Searcher</title>
   </head>
   <body>
@@ -21,7 +20,7 @@
               <a class="nav-link active" aria-current="page" href="home.html">Caută după nume</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="ingredients.html">Cauta după ingrediente</a>
+              <a class="nav-link active" href="ingredients.html">Caută după ingrediente</a>
             </li>
           </ul>
         </div>
@@ -29,27 +28,28 @@
     </nav>
 
     <div class="col text-center mt-3">
-      <h1 class="mb-3 ms-3 me-3" id="rezultate">Rezultate</h1>
+      <h1 class="mb-3 ms-3 me-3" id="container-results">Rezultate</h1>
       <h5 id="drinks"></h5>
     </div>
 
     <div class="row mt-5 mb-5">
 	    <div class="col-2"></div>
 	    <div class="col-8">
-        <form action="#" onsubmit="cautaCocktail();return false">
+        <form action="#" onsubmit="searchForCocktail();return false">
           <div class="text-center">
             <button type="submit" class="btn btn-primary mb-2 align-self-center">Caută</button>
           </div>
+
           <div class="row">
             <div class="col-6">
               <h2 class="text-center">Ingrediente dorite</h2>
-              <div class="d-flex flex-row flex-wrap justify-content-around" id="butoane-dorite">
+              <div class="d-flex flex-row flex-wrap justify-content-around" id="buttons-wanted">
               </div>
             </div>
             
             <div class="col-6">
               <h2 class="text-center">Ingrediente nedorite</h2>
-              <div class="d-flex flex-row flex-wrap justify-content-around" id="butoane-nedorite">
+              <div class="d-flex flex-row flex-wrap justify-content-around" id="buttons-unwanted">
               </div>
             </div>
           </div>
