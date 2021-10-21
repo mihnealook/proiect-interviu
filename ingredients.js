@@ -4,6 +4,9 @@ window.onload = () => { getIngredients(); };
 
 function getIngredients() {
     let searchQuerry = "https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list";
+    document.getElementById("container-cocktail").innerHTML = "";
+    document.getElementById("descriere").hidden = true;
+    document.getElementById("rezultate").hidden = true;
     const xhttp = new XMLHttpRequest();
     xhttp.onload = function() {
         for(let ingredient of JSON.parse(this.responseText)["drinks"]) {
