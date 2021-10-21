@@ -1,3 +1,29 @@
+function parseResponse(alcoholCheck, context) {
+    let addedElem = 0;
+    let indexOfAddedElem = 0;
+    lastResponse = JSON.parse(context.responseText)["drinks"];
+    if(!lastResponse) {
+        document.getElementById("container-cocktail").innerHTML = `"<h3 class="col-sm-4 mb-1 ms-3">Nu a fost gasit niciun rezultat</h3>"`;
+        return;
+    }
+    
+    for(let result of lastResponse) {
+        if(alcoholCheck || (!alcoholCheck && result["strAlcoholic"] != "Alcoholic")) {
+            addedElem++;
+            addElemToList(result, lastResponse.indexOf(result));
+            indexOfAddedElem = lastResponse.indexOf(result);
+        }
+    }
+
+    if(!addedElem) {
+        document.getElementById("container-cocktail").innerHTML = `<h3 class="col-sm-4 mb-1 ms-3">Nu a fost gasit niciun rezultat</h3>`;
+    }
+
+    if(addedElem == 1) {
+        showDetails(indexOfAddedElem)
+    }
+}
+
 function addElemToList(elem, index) {
     const divParent = document.getElementById("container-cocktail");
     divParent.innerHTML+=

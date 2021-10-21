@@ -28,7 +28,12 @@
       </div>
     </nav>
 
-    <div class="row mt-5">
+    <div class="col text-center mt-3">
+      <h1 class="mb-3 ms-3 me-3" id="rezultate">Rezultate</h1>
+      <h5 id="drinks"></h5>
+    </div>
+
+    <div class="row mt-5 mb-5">
 	    <div class="col-2"></div>
 	    <div class="col-8">
         <form action="#" onsubmit="cautaCocktail();return false">
@@ -53,29 +58,6 @@
 	    <div class="col-2"></div>
     </div>
 
-    <div class="mt-5 ms-3" id="cocktailuri">
-      <div class="mb-3" id="rezultate" hidden>
-        <h1>Rezultate</h1>
-      </div>
-      <div class="d-flex flex-column text-center" id="container-cocktail">
-      </div>
-
-      <div class="card text-white bg-dark col-md-6 mt-3 mb-5" id="descriere" hidden>
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img id="descriere-imagine" src="https://www.thecocktaildb.com/images/media/drink/9179i01503565212.jpg" class="img-fluid rounded-start p-1" height="100%" width="100%" alt="Image of a cocktail"/>
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 id="descriere-titlu" class="card-title">titlu cocktail</h5>
-              <p id="descriere-descriere" class="card-text">descriere cocktail</p>
-              <p class="card-text"><small id="descriere-ingrediente" class="text-muted">Ingrediente</small></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>
