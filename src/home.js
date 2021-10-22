@@ -50,7 +50,7 @@ function parseResponse(alcoholCheck, context) {
     let addedElem = 0; /* Contor cu numărul de elemente adăugate în listă */
     let indexOfAddedElem = 0; /* Index-ul ultimului element adăugat */
     const noResultString =
-        `"<h3 class="col-sm-4 mb-1 ms-3">Nu a fost găsit niciun rezultat</h3>"`;
+        `<h3 class="col-sm-4 mb-1 ms-3">Nu a fost găsit niciun rezultat</h3>`;
     const cocktailList = document.getElementById("container-cocktail-list");
 
     lastResponse = JSON.parse(context.responseText)["drinks"];
