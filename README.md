@@ -87,13 +87,15 @@ Apelul care listează ingredientele întoarce doar 100 de răspunsuri (deși în
 
 ## Precizări
 
-Coding style-ul folosit este [Google JavaScript Style Guide](https://google.github.io/styleguide/jsguide.html)
+Coding style-ul folosit a fost [Google JavaScript Style Guide](https://google.github.io/styleguide/jsguide.html)
 
 Favicon-ul a fost preluat de pe [flaticon.com](https://www.flaticon.com/premium-icon/cocktail_3086535?term=cocktail&related_id=3086535)
 
 Câteva elemente din codul de HTML au fost preluate din tutorialele de Bootstrap 5 de [aici](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
 
 Proiectul a fost testat pe: Google Chrome (94.0.4606.81), Mozilla Firefox (93.0), Microsoft Edge (94.0.992.50) și Opera (80.0.4170.40)
+
+Proiectul nu a fost testat pe device-uri mobile și pot apărea probleme de scaling
 
 Detalii despre implementare se regăsesc în comentariile din cod
 
